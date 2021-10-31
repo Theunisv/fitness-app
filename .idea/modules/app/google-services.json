@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44677627096",
+    "firebase_url": "https://opsc-fitness-app.firebaseio.com",
+    "project_id": "opsc-fitness-app",
+    "storage_bucket": "opsc-fitness-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44677627096:android:d36beb038084d6da0b6bad",
+        "android_client_info": {
+          "package_name": "com.vega_opsc_student17605849.greyscalefitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44677627096-fci7uo0sbccg00d0n1tnv1a11162tnm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vega_opsc_student17605849.greyscalefitness",
+            "certificate_hash": "c8eeecad8511fc58d69c25959f620be89a15fbc2"
+          }
+        },
+        {
+          "client_id": "44677627096-s5s5qhn8i705ngungtj33i40lcm7ui99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG1kJaP82vLD0QpgatgxSAUQYhYJvwFHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44677627096-s5s5qhn8i705ngungtj33i40lcm7ui99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vega_opsc_student17605849.greyscalefitness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gs_final_launch_icon"
+        android:label="GS Fit"
+        android:roundIcon="@mipmap/gs_final_launch_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeBackActivity"></activity>
+        <activity android:name=".WeightInfoActivity" />
+        <activity android:name=".BasicInformationSetup" />
+        <activity android:name=".IntroScreen" />
+        <activity android:name=".WelcomeScreen" />
+        <activity android:name=".SignUpScreen" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@anim/slide_in_right" />
+
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@mipmap/gs_final_launch_icon"
+            android:label="GS Fit"
+            android:roundIcon="@mipmap/gs_final_launch_icon_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".StepCounter" />
+    </application>
+
+</manifest>

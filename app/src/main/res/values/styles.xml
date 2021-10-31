@@ -1,0 +1,152 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondaryVar</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyApp.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent</item>
+        <item name="materialButtonStyle">@style/Widget.MyApp.MyButton</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+    </style>
+
+    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorPrimary">@color/black_800</item>
+        <item name="colorPrimaryVariant">@color/white_50</item>
+        <item name="colorOnPrimary">@color/white_50</item>
+        <item name="colorSecondary">@color/white_50</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="iconTint">@color/white_50</item>
+    </style>
+
+    <style name="custom.ringprocess" parent="">
+        <item name="ringColor">@color/colorSecondaryVar</item>
+        <item name="ringProgressColor">@color/colorPrimaryDark</item>
+        <item name="ringWidth">30dp</item>
+    </style>
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/black_800</item>
+        <item name="colorOnPrimary">@color/white_50</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="MyStyle.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black_800</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+    <style name="MyStyle.TextInput" parent="FirebaseUI.TextInputEditText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black_800</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnSurface">@color/fui_transparent</item>
+        <item name="colorError">@color/design_default_color_error</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="Widget.MyApp.MyButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Widget.MyApp.MyIconButton" parent="MaterialAlertDialog.MaterialComponents.Title.Icon">
+        <item name="backgroundTint">@color/white_50</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="textColor">@color/black_900</item>
+    </style>
+
+    <style name="SmallLineChart">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:minHeight">50dp</item>
+    </style>
+
+    <style name="DetailsIconButton">
+        <item name="icon">@drawable/ic_baseline_insert_chart_24</item>
+    </style>
+
+    <style name="AddIconButton">
+        <item name="icon">@drawable/ic_baseline_add_24</item>
+        <item name="iconStartPadding">4dp</item>
+    </style>
+
+    <style name="SmallAddIconButton">
+        <item name="icon">@drawable/ic_baseline_add_24</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:width">25dp</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <style name="SmallEditIconButton">
+        <item name="icon">@drawable/ic_baseline_edit_24</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:width">25dp</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="SmallDeleteIconButton">
+        <item name="icon">@drawable/ic_baseline_delete_forever_24</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:width">25dp</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+</resources>

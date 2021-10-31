@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/goals_layout_temp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="Calorie Goal"
+            android:textColor="@color/black_900"
+            android:id="@+id/goals_name_temp"
+            />
+
+        <TextView
+            android:id="@+id/goals_layout_value_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="110dp"
+            android:text="Nutrition Goal"
+
+            />
+
+        <Button
+            android:id="@+id/btn_goals_edit"
+            style="@style/SmallEditIconButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="55dp" />
+    <Button
+        android:id="@+id/btn_goals_remove"
+        style="@style/SmallDeleteIconButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="5dp" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

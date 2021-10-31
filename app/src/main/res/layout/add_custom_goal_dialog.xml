@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/editText3"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:focusable="false"
+        android:text="Goal name:"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:id="@+id/customgoal_goalname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ellipsize="end"
+        android:hint="Give the goal a name."
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:focusable="false"
+        android:text="Goal amount:"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:id="@+id/customgoal_goalamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Number you wish to reach."
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:focusable="false"
+        android:text="Goal measurement:"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:id="@+id/customgoal_goalmeasurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="E.g. days/week, times/day, etc."
+        android:maxLines="1" />
+
+</LinearLayout>

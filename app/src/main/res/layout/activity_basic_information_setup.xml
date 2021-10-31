@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicInformationSetup"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="212dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gs_logo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Basic Information"
+            android:textAlignment="center"
+            android:textColor="@color/black_800"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/open_sans"
+           android:text="Metrics"
+            android:textAlignment="center"
+            android:textColor="@color/black_800"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="0dp">
+
+                <Switch
+                    android:id="@+id/switchWeightUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:ellipsize="middle"
+                    android:gravity="right|center"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:showText="true"
+                    android:switchTextAppearance="@style/MyStyle.Switch"
+                    android:text="Weight Unit"
+                    android:textColor="@color/black_900"
+                    android:textColorHint="#604040"
+                    android:textOff="KG"
+                    android:textOn="LB"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchLengthUnit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Switch
+                    android:id="@+id/switchLengthUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:fontFamily="@font/open_sans"
+                    android:layoutDirection="rtl"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:showText="true"
+                    android:splitTrack="false"
+                    android:switchTextAppearance="@style/MyStyle.Switch"
+                    android:text="Length Unit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/black_900"
+                    android:textOff="M"
+                    android:textOn="FT"
+                    android:textSize="10sp"
+                    android:foregroundGravity="center"
+                    android:layout_marginLeft="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/switchWeightUnit"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="top|center">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height:"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:layout_gravity="center"
+
+                   />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvHeightInput1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvHeight1Unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                     />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvHeightInput2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                   android:inputType="number"
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvHeight2Unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight:"
+                    android:focusable="false"
+                    android:background="@null"
+
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvWeightInput"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvWeightMetricKG_LB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kg"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv11"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="Fitness Level:" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv14"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="Exercise Frequency:" />
+
+                <Spinner android:id="@+id/spinner2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv15"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="Fitness Goal:" />
+
+                <Spinner android:id="@+id/spinner3"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv13"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="Daily Activity:" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:inputType="none"
+                    android:id="@+id/tfDailyActivity"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv17"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="Gender:" />
+
+                <Spinner
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:inputType="none"
+                    android:id="@+id/gender"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="333dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/open_sans"
+        android:text="The basic information can be changed in the profile settings at any time."
+        android:textAlignment="center"
+        android:textColor="@color/black_800"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoadDash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnLoadDash"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        android:text="Next"
+        android:textColor="@color/tw__solid_white"
+        app:icon="@drawable/ic_baseline_play_arrow_24"
+        app:iconTint="@color/white_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_dashboard"
+        android:enabled="true"
+        android:icon="@drawable/dashboardicon1"
+        android:checked="true"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/bottom_nav_nutrition"
+        android:enabled="true"
+        android:icon="@drawable/dashboardicon2"
+        android:title="Nutrition"
+        android:titleCondensed="Nutrition" />
+    <item
+        android:id="@+id/bottom_nav_workout"
+        android:enabled="true"
+        android:icon="@drawable/dashboardicon3"
+        android:title="Workout"/>
+    <item
+        android:id="@+id/bottom_nav_goals"
+        android:enabled="true"
+        android:icon="@drawable/dashboardicon4"
+        android:title="Goals"/>
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:enabled="true"
+        android:icon="@drawable/dashboardicon5"
+        android:title="Profile"/>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity name:"
+        android:id="@+id/editText"
+        android:focusable="false"
+        android:textIsSelectable="false"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Maximum 20 characters"
+        android:id="@+id/activity_name_alertbox"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxLength="20"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimated effort:"
+        android:focusable="false"
+        android:textIsSelectable="false"
+        android:id="@+id/editText3"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"/>
+
+    <Spinner
+        android:id="@+id/spin_workout_effort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

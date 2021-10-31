@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="workout_fragment_progressbar" type="id"/>
+    <item name= "workout_fragment_title" type="id"/>
+    <item name="workout_fragment_table_title" type="id"/>
+    <item name="workout_history_title" type="id"/>
+    <item name="workout_history_chart" type="id"/>
+    <item name="workout_history_chip_group" type="id"/>
+
+    <item name="workout_history_chip_6mo" type="id"/>
+    <item name="workout_history_chip_3mo" type="id"/>
+    <item name="workout_history_chip_1mo" type="id"/>
+    <item name="workout_history_chip_2we" type="id"/>
+
+    <item name="workout_activities_title" type="id"/>
+    <item name="workout_activities_table" type="id"/>
+    <item name="workout_activities_row_content" type="id"/>
+    <item name="workout_activities_sv" type="id"/>
+    <item name="workout_activities_addbutton" type="id"/>
+    <item name="workout_activities_column_a" type="id"/>
+
+</resources>

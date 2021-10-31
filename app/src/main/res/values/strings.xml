@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Grey Scale Fitness</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_title">Dashboard</string>
+
+
+    <string-array name="workout_effort">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="training_goal">
+        <item>Lose Weight</item>
+        <item>Bulk up</item>
+        <item>Improve fitness</item>
+        <item>Improve strength</item>
+    </string-array>
+
+</resources>
